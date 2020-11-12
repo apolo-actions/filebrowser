@@ -1,0 +1,25 @@
+kind: live
+name: Run Filebrowser
+author: Alexey Naiden
+descr: runs Filebrowser
+
+inputs:
+  http_port:
+    descr: http port for jupyter
+    default: "80"
+  http_auth:
+    descr: whether to use http auth for jupter
+    default: "True"
+  volumes_project_remote:
+    descr: reference to a project remote
+
+job:
+    image: filebrowser/filebrowser:latest
+    http_port: $[[ inputs.http_port ]]
+    http_auth: $[[ inputs.http_auth ]]
+    preset: cpu-small
+    browse: True
+    detach: True
+    volumes:
+      - $[[ inputs.volumes_project_remote ]]:/srv:rw
+    cmd: --noauth
