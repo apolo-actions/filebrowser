@@ -1,0 +1,18 @@
+kind: live
+title: Test
+
+defaults:
+  preset: cpu-small
+  life_span: 1h
+
+volumes:
+  project:
+    remote: "storage:"
+    mount: /project
+    local: .
+
+jobs:
+  filebrowser:
+    action: gh:neuro-actions/filebrowser@master
+    args:
+      volumes_project_remote: $[[ volumes.project.remote ]]
