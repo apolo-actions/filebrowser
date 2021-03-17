@@ -13,7 +13,7 @@ inputs:
   volumes_project_remote:
     descr: reference to a project remote
   job_name:
-    default: "webdav"
+    default: "filebrowser"
     descr: |
       The name of Jupyter server.
       Use it to generate a predictable job hostname.
