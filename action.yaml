@@ -12,9 +12,15 @@ inputs:
     default: "True"
   volumes_project_remote:
     descr: reference to a project remote
+  job_name:
+    default: "webdav"
+    descr: |
+      The name of Jupyter server.
+      Use it to generate a predictable job hostname.
 
 job:
     image: filebrowser/filebrowser:latest
+    name: ${{ inputs.job_name }}
     http_port: $[[ inputs.http_port ]]
     http_auth: $[[ inputs.http_auth ]]
     preset: cpu-small
