@@ -18,7 +18,7 @@ jobs:
 
 ### `http_port`
 
-HTTP port to use for Jupyter. "80" by default.
+HTTP port to use for Jupyter. `"80"` by default.
 
 ### Example
 
@@ -29,7 +29,7 @@ args:
 
 ### `http_auth`
 
-Whetther to use HTTP authentication for Jupyter or not. "True" by default.
+Whetther to use HTTP authentication for Jupyter or not. `"True"` by default.
 
 ### Example
 
@@ -51,7 +51,7 @@ args:
 
 ### `job_name`
 
-The name of the Jupyter server. Use it to generate a predictable job hostname. "filebrowser" by default.
+The name of the Jupyter server. Use it to generate a predictable job hostname. `"filebrowser"` by default.
 
 ### Example
 
