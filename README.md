@@ -68,5 +68,18 @@ Resource preset, used to run the server. The first one in the `neuro config show
 
 ```
 args:
-	job_name: "browser-job"
+	preset: cpu-small
+```
+
+### `life_span`
+
+Amount of time to keep the Filebrowser job running.
+Format: "1d2h3m4s" (some parts may be missing).
+Default: 1 day.
+
+### Example
+
+```
+args:
+	life_span: 30d20h
 ```
