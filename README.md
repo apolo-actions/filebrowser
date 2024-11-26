@@ -1,6 +1,6 @@
-# Filebrowser action for neuro-flow
+# Filebrowser action for apolo-flow
 
-This is a [`neuro-flow`](https://github.com/neuro-inc/neuro-flow) action launching the [Filebrowser](https://hub.docker.com/r/filebrowser/filebrowser) app for working with platform storage.
+This is a [`apolo-flow`](https://github.com/neuro-inc/neuro-flow) action launching the [Filebrowser](https://hub.docker.com/r/filebrowser/filebrowser) app for working with platform storage.
 
 All it needs is a reference to a storage folder that becomes the root folder for the Filebrowser instance.
 
@@ -9,7 +9,7 @@ All it needs is a reference to a storage folder that becomes the root folder for
 ```
 jobs:
   filebrowser:
-    action: gh:neuro-actions/filebrowser@v1.0.1
+    action: gh:apolo-actions/filebrowser@v1.0.1
     args:
       volumes_project_remote: $[[ volumes.project.remote ]]
 ```
@@ -62,7 +62,7 @@ args:
 
 ### `preset`
 
-Resource preset, used to run the server. The first one in the `neuro config show` list by default.
+Resource preset, used to run the server. The first one in the `apolo config show` list by default.
 
 ### Example
 

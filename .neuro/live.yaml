@@ -13,7 +13,7 @@ volumes:
 
 jobs:
   filebrowser:
-    action: gh:neuro-actions/filebrowser@v22.9.0
+    action: gh:apolo-actions/filebrowser@v22.9.0
     args:
       volumes_project_remote: $[[ volumes.project.remote ]]
 
